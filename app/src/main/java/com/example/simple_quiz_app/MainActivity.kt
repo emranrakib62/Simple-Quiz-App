@@ -13,16 +13,19 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        binding=ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-binding.button.setOnClickListener {
+        binding.button.setOnClickListener {
+            var intent= Intent(applicationContext, SecondActivity::class.java)
+            startActivity(intent)
 
 
-    var intent=Intent(applicationContext,SecondActivity::class.java)
-    startActivity(intent)
-}
+        }
+
+
+
 
     }
+
 }
