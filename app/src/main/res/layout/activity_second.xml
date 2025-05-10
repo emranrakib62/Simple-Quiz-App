@@ -47,13 +47,15 @@
     </RadioGroup>
 
     <Button
+        android:layout_marginTop="40dp"
+        style="@style/Widget.Material3.Button.ElevatedButton"
         android:id="@+id/button1"
-        android:layout_width="250dp"
+        android:layout_width="220dp"
+        android:backgroundTint="#DAF20D"
         android:layout_height="wrap_content"
-        android:text="Next"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#81ED07"
-        android:textColor="@android:color/black"
-        android:layout_gravity="center" />
+        android:text="Next Question"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        />
 </LinearLayout>
